@@ -82,7 +82,7 @@ app.listen(port, async () => {
   logger.info("App Started on port", { port });
 
   try {
-    await AppDataSource.initialize();
+    // await AppDataSource.initialize();
     console.log("Database connection successful...");
   } catch (error) {
     logger.error(error);
